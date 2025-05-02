@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Image Gallery</title>
+    <link href="./css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="language-switch">
+            <button class="language-btn" id="languageBtn">العربية</button>
+        </div>
+        
+        <h1 id="galleryTitle">IMAGE GALLERY</h1>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search images...">
+        </div>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="people">People</button>
+        </div>
+        
+        <div class="gallery" id="gallery">
+            <!-- Images will be added by JavaScript -->
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="imageModal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage">
+            <div class="modal-caption" id="modalCaption"></div>
+            <div class="nav-buttons">
+                <button class="nav-btn" id="prevBtn">Previous</button>
+                <button class="nav-btn" id="nextBtn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
